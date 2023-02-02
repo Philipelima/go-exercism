@@ -8,7 +8,7 @@ func CanFastAttack(knightIsAwake bool) bool {
 // CanSpy can be executed if at least one of the characters is awake.
 func CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake bool) bool {
 
-  	if knightIsAwake == true || archerIsAwake == true || prisonerIsAwake == true {
+    if knightIsAwake == true || archerIsAwake == true || prisonerIsAwake == true {
         return true
     }
   
@@ -22,7 +22,7 @@ func CanSignalPrisoner(archerIsAwake, prisonerIsAwake bool) bool {
         return true
     }
     
-	return false
+    return false
 }
 
 // CanFreePrisoner can be executed if the prisoner is awake and the other 2 characters are asleep
@@ -32,9 +32,9 @@ func CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPres
     twoCharactersAreAsleep := archerIsAwake == false && knightIsAwake == false 
     petDogIsWithHerAndArcherIsSleeping := petDogIsPresent == true && archerIsAwake == false
     
-	if (petDogIsWithHerAndArcherIsSleeping || twoCharactersAreAsleep && prisonerIsAwake == true) {
+    if (petDogIsWithHerAndArcherIsSleeping || twoCharactersAreAsleep && prisonerIsAwake == true) {
         return true
     }
     
-	return false
+    return false
 }
