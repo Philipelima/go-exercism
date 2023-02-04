@@ -20,7 +20,7 @@ func CalculateWorkingCarsPerHour(productionRate int, successRate float64) float6
 func CalculateWorkingCarsPerMinute(productionRate int, successRate float64) int {
 
     carsPerHour := CalculateWorkingCarsPerHour(productionRate, successRate)
-	carsPerMinutes := int(carsPerHour) / HOUR_MINUTES
+    carsPerMinutes := int(carsPerHour) / HOUR_MINUTES
 
     return carsPerMinutes
 }
@@ -33,5 +33,5 @@ func CalculateCost(carsCount int) uint {
     remaining := carsCount % 10
   
     cost := (groups * TEN_CARS_GROUP_COST) + (remaining * CAR_UNIT_COST)
-	return uint(cost)
+    return uint(cost)
 }
