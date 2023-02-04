@@ -11,9 +11,7 @@ var CurrentLocation string
 
 // Forecast function gets waether forecast.
 func Forecast(city, condition string) string {
-    
 	CurrentLocation, CurrentCondition = city, condition
-
-    
+	
 	return CurrentLocation + " - current weather condition: " + CurrentCondition
 }
